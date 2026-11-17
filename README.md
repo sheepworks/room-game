@@ -2,6 +2,8 @@
 
 A Roblox horror experience with interactive exploration and progression mechanics.
 
+Playable Demo (Active Development): https://www.roblox.com/games/15219700641/room
+
 ## [Thumbnails]
 <img width="256" height="256" alt="game icon" src="https://github.com/user-attachments/assets/50c7a8a8-e523-4556-bedd-47121c6ed61f" />
 <img width="768" height="432" alt="game thumbnail" src="https://github.com/user-attachments/assets/e766ed6c-697d-4d19-afb9-f1389d775c3d" />
