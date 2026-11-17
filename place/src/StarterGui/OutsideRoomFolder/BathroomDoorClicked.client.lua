@@ -1,13 +1,17 @@
-local bathroomDoorProximity = game.Workspace["Room 2"].BathroomDoor:WaitForChild("Top").ClickDetector
-local module = require(game.ReplicatedStorage.TextModule)
-local frame = script.Parent.Parent.TextGui.TextFrame
-local doorSfx = game.Workspace["Door Open Sound"]
-local birdsSfx = game.Workspace["Morning Birds 8 (SFX)"]
-local pressSfx = game.Workspace.selectFinal
-local module = require(game.ReplicatedStorage.TextModule)
-local bathroomTeleporter = game.Workspace.Bathroom.BathroomTeleporter
-local text = script.Parent.Parent.TextGui.TextFrame.Text
-local insideDoorProx = game.Workspace.Bathroom.BathroomDoor:WaitForChild("Top").ClickDetector
+local Players = game:GetService("Players")
+local Workspace = game:GetService("Workspace")
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+local textGui = playerGui:WaitForChild("TextGui")
+local frame = textGui:WaitForChild("TextFrame")
+local room2 = Workspace:WaitForChild("Room 2")
+local bathroomDoorProximity = room2:WaitForChild("BathroomDoor"):WaitForChild("Top"):WaitForChild("ClickDetector")
+local bathroom = Workspace:WaitForChild("Bathroom")
+local bathroomTeleporter = bathroom:WaitForChild("BathroomTeleporter")
+local insideDoorProx = bathroom:WaitForChild("BathroomDoor"):WaitForChild("Top"):WaitForChild("ClickDetector")
+local doorSfx = Workspace:WaitForChild("Door Open Sound")
+local birdsSfx = Workspace:WaitForChild("Morning Birds 8 (SFX)")
+local pressSfx = Workspace:WaitForChild("selectFinal")
 
 insideDoorProx.MaxActivationDistance = 0
 
